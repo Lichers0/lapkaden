@@ -22,3 +22,4 @@
 		compatible = "zmk,kscan-gpio-direct";
 		wakeup-source;
 	};
+};
