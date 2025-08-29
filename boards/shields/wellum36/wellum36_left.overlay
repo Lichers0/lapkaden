@@ -32,7 +32,7 @@
 
 /*
  * Вариант подключения: matrix
- */
+ *
 
 &kscan0 {
   col-gpios
@@ -43,3 +43,4 @@
 	  , <&pro_micro 20 GPIO_ACTIVE_HIGH>
 		;
 };
+*/

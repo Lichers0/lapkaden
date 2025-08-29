@@ -36,7 +36,7 @@
 
 /*
  * Вариант подключения: matrix
- */
+ *
 
 &default_transform {
 	col-offset = <5>;
@@ -51,3 +51,4 @@
 	  , <&pro_micro 20 GPIO_ACTIVE_HIGH>
 		;
 };
+*/
