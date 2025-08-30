@@ -1,3 +1,4 @@
+#include <locale/keys_ru.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
@@ -10,13 +11,14 @@
 #define ______ &trans
 
 #define DEF 0
-#define GAM 1
-#define GFN 2
-#define SYM 3
-#define NAV 4
-#define NUM 5
-#define ALT 6
-#define CMD 7
+#define RU 1
+#define GAM 2
+#define GFN 3
+#define SYM 4
+#define NAV 5
+#define NUM 6
+#define ALT 7
+#define CMD 8
 
 #define MEH(key) LS(LC(LA(key)))
 
@@ -196,6 +198,15 @@ _ Q          _ W          _ E          _ R         _ T             _ Y          
 _ A          _ S          _ D          _ F         _ G             _ H          _ J          _ K          _ L          _ SEMI
 _ Z          _ X          _ C          _ V         _ B             _ N          _ M          _ COMMA      _ DOT        _ FSLH
                           _ CAPS       _ SPACE     &la NAV         &la SYM      _ LSFT       &mo ALT
+            >;
+        };
+
+        ru_layer {
+            bindings = <
+_ RU_CYRILLIC_SHORT_I   _ RU_CYRILLIC_TSE         _ RU_CYRILLIC_U          _ RU_CYRILLIC_KA        _ RU_CYRILLIC_IE             _ RU_CYRILLIC_EN  _ RU_CYRILLIC_GHE        _ RU_CYRILLIC_SHA        _ RU_CYRILLIC_ZE        _ RU_CYRILLIC_HA
+_ RU_CYRILLIC_EF        _ RU_CYRILLIC_YERU        _ RU_CYRILLIC_VE         _ RU_CYRILLIC_A         _ RU_CYRILLIC_PE             _ RU_CYRILLIC_ER  _ RU_CYRILLIC_O          _ RU_CYRILLIC_EL         _ RU_CYRILLIC_DE        _ RU_CYRILLIC_ZHE
+_ RU_CYRILLIC_YA        _ RU_CYRILLIC_CHE         _ RU_CYRILLIC_ES         _ RU_CYRILLIC_EM        _ RU_CYRILLIC_I              _ RU_CYRILLIC_TE  _ RU_CYRILLIC_SOFT_SIGN  _ RU_CYRILLIC_BE         _ RU_CYRILLIC_YU        _ RU_CYRILLIC_E
+                                                                           _ CAPS                  _ SPACE     &la NAV         &la SYM      _ LSFT       &mo ALT
             >;
         };
 
