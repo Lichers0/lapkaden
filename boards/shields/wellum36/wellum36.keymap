@@ -98,14 +98,28 @@
                 &m_release_key_twice PARAM_1
         )
 
-        STICKY_FOREVER(sticky_forever, &m_press_key_twice)
+        MACRO_ONE_PARAM(
+            m_press_key_rd,
+            &macro_press
+                &macro_param_1to1 &kp PARAM_1
+            &macro_pause_for_release
+            &macro_release
+                &macro_param_1to1 &kp PARAM_1
+        )
 
-        MODMORPH(
+        STICKY_FOREVER(sticky_forever, &m_press_key_rd)
+
+        /* MODMORPH( */
+        /*     cm_gui, */
+        /*     &sticky_forever LGUI, */
+        /*     &m_release_key_twice LGUI, */
+        /*     MOD_LGUI, */
+        /*     MOD_LGUI */
+        /* ) */
+
+        MACRO_ONE_PARAM(
             cm_gui,
-            &sticky_forever LGUI,
-            &m_release_key_twice LGUI,
-            MOD_LGUI,
-            MOD_LGUI
+            &sticky_forever MOD_LGUI
         )
 
         MODMORPH(
