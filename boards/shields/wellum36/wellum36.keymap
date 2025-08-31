@@ -109,10 +109,13 @@
 
         STICKY_FOREVER(sticky_forever, &m_press_key_rd)
 
-        MACRO_ONE_PARAM(
-            cm_gui,
-            &sticky_forever LGUI
-        )
+        cm_gui: cm_gui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&sticky_forever LGUI>;
+        }
 
         MODMORPH(
             cm_alt,
