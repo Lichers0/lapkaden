@@ -109,14 +109,6 @@
 
         STICKY_FOREVER(sticky_forever, &m_press_key_rd)
 
-        /* MODMORPH( */
-        /*     cm_gui, */
-        /*     &sticky_forever LGUI, */
-        /*     &m_release_key_twice LGUI, */
-        /*     MOD_LGUI, */
-        /*     MOD_LGUI */
-        /* ) */
-
         MACRO_ONE_PARAM(
             cm_gui,
             &sticky_forever LGUI
