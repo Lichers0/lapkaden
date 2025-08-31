@@ -119,7 +119,7 @@
 
         MACRO_ONE_PARAM(
             cm_gui,
-            &sticky_forever MOD_LGUI
+            &sticky_forever LGUI
         )
 
         MODMORPH(
