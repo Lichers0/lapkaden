@@ -15,10 +15,11 @@
 #define GAM 2
 #define GFN 3
 #define SYM 4
-#define NAV 5
-#define NUM 6
-#define ALT 7
-#define CMD 8
+#define SYM_EX 5
+#define NAV 6
+#define NUM 7
+#define ALT 8
+#define CMD 9
 
 #define MEH(key) LS(LC(LA(key)))
 
@@ -300,7 +301,16 @@ _ G          _ J          _ I          _ M         _ T             _ KP_NUM     
             bindings = <
 _ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
 _ LT         _ COLON      _ LBRC       _ LPAR       _ LBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
+___          ___          ___          ___          ___             _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
+                          ______       &mo SYM_EX  ______          ______       ______       ______
+            >;
+        };
+
+        sym_ex_layer {
+            bindings = <
+___          ___          ___          ___          ___             ___          ___          ___          ___          ___
+_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          ___          ___          ___          ___          ___
+___          ___          ___          ___          ___             ___          ___          ___          ___          ___
                           ______       ______      ______          ______       ______       ______
             >;
         };
