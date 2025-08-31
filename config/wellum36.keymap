@@ -298,9 +298,9 @@ _ G          _ J          _ I          _ M         _ T             _ KP_NUM     
 
         sym_layer {
             bindings = <
-_ N1         _ N2         _ N3         _ N4        _ N5            _ N6         _ N7         _ N8         _ N9         _ N0
-_ SEMI       _ GRV        _ SQT        _ DQT       _ MINUS         _ PLUS       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-_ BSL        ___          _ LS(LBKT)   _ LBKT      _ UNDER         _ EQUAL      _ RBKT       _ LS(RBKT)   _ PIP        _ BSLH
+_ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
+_ LT         _ COLON      _ LBRC       _ LPAR       _ LBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
                           ______       ______      ______          ______       ______       ______
             >;
         };

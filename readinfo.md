@@ -8,3 +8,5 @@
 <https://github.com/d3dat/zmk-config-lapka>
 <https://github.com/mbaliura/zmk-config-lapka>
 brew install --cask karabiner-elements
+
+<https://keymapdb.com/keymaps/indianpojken/>
