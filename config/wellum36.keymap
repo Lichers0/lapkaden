@@ -301,7 +301,7 @@ _ G          _ J          _ I          _ M         _ T             _ KP_NUM     
             bindings = <
 _ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
 _ LT         _ COLON      _ LBRC       _ LPAR       _ LBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          ___          ___          ___          ___             _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
+___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
                           ______       &mo SYM_EX  ______          ______       ______       ______
             >;
         };
@@ -310,7 +310,7 @@ ___          ___          ___          ___          ___             _ EXCL      
             bindings = <
 ___          ___          ___          ___          ___             ___          ___          ___          ___          ___
 _ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          ___          ___          ___          ___          ___
-___          ___          ___          ___          ___             ___          ___          ___          ___          ___
+___          ___          _ DQT        ___          ___             _ QMARK      ___          ___          ___          ___
                           ______       ______      ______          ______       ______       ______
             >;
         };
