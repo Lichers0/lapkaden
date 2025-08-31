@@ -62,6 +62,7 @@
         #binding-cells = <1>; \
         bindings = <BIND>; \
         release-after-ms = <MAX_TIMER>; \
+        quick-release; \
         ignore-modifiers; \
     };
 
