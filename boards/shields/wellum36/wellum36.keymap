@@ -129,6 +129,7 @@
             &tap_switch,
             &tap_switch_back,
             MOD_LSFT,
+            0
         )
 
         MODMORPH(
@@ -136,6 +137,7 @@
             &app_switch,
             &app_switch_back,
             MOD_LSFT,
+            0
         )
 
         // Tap-dance behaviors for Russian letters
