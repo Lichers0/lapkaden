@@ -141,24 +141,24 @@
         )
 
         // Tap-dance behaviors for Russian letters
-        td_e_yo: tap_dance_e_yo {
+        td_si_yo: tap_dance_e_yo {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp RU_CYRILLIC_SHORT_I>, <&kp RU_CYRILLIC_IO>; // Й/Ё
         };
 
         td_sh_shch: tap_dance_sh_shch {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp RU_CYRILLIC_SHA>, <&kp RU_CYRILLIC_SHCHA>; // Ш/Щ
         };
 
         td_soft_hard: tap_dance_soft_hard {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>; // Ь/Ъ
         };
     };
@@ -233,7 +233,7 @@ _ Z          _ X          _ C          _ V         _ B             _ N          
 
         ru_layer {
             bindings = <
-_ RU_CYRILLIC_SHORT_I   _ RU_CYRILLIC_TSE         _ RU_CYRILLIC_U          _ RU_CYRILLIC_KA        &td_e_yo                     _ RU_CYRILLIC_EN  _ RU_CYRILLIC_GHE        &td_sh_shch              _ RU_CYRILLIC_ZE        _ RU_CYRILLIC_HA
+&td_si_yo               _ RU_CYRILLIC_TSE         _ RU_CYRILLIC_U          _ RU_CYRILLIC_KA        _ RU_CYRILLIC_IE             _ RU_CYRILLIC_EN  _ RU_CYRILLIC_GHE        &td_sh_shch              _ RU_CYRILLIC_ZE        _ RU_CYRILLIC_HA
 _ RU_CYRILLIC_EF        _ RU_CYRILLIC_YERU        _ RU_CYRILLIC_VE         _ RU_CYRILLIC_A         _ RU_CYRILLIC_PE             _ RU_CYRILLIC_ER  _ RU_CYRILLIC_O          _ RU_CYRILLIC_EL         _ RU_CYRILLIC_DE        _ RU_CYRILLIC_ZHE
 _ RU_CYRILLIC_YA        _ RU_CYRILLIC_CHE         _ RU_CYRILLIC_ES         _ RU_CYRILLIC_EM        _ RU_CYRILLIC_I              _ RU_CYRILLIC_TE  &td_soft_hard            _ RU_CYRILLIC_BE         _ RU_CYRILLIC_YU        _ RU_CYRILLIC_E
                                                                            &layer_en               _ SPACE     &la NAV         &la SYM      _ LSFT       &mo ALT
