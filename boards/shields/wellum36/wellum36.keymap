@@ -74,6 +74,18 @@
         keep-mods = <(KEEP_MODS)>; \
     };
 
+#define KEEP_MODS_LINE(x) keep-mods = <(x)>;
+#define KEEP_MODS_LINE_EMPTY()
+
+#define MODMORPH2(NAME, NORMAL, MORPHED, MODS, KEEP_MODS) \
+    NAME: NAME { \
+        compatible = "zmk,behavior-mod-morph"; \
+        #binding-cells = <0>; \
+        bindings = <NORMAL>, <MORPHED>; \
+        mods = <(MODS)>; \
+        KEEP_MODS \
+    };
+
 &sk {
         release-after-ms = <60000>;
 };
