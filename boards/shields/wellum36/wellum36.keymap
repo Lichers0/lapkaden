@@ -97,39 +97,6 @@
         MACRO_NO_PARAM(cm_ctrl, &sticky_forever LCTRL)
         MACRO_NO_PARAM(cm_sft,  &sticky_forever LSHIFT)
 
-
-        MACRO_TWO_PARAM(
-            m_hold_mod_press_key,
-            &macro_press
-                &macro_param_1to1 &kp PARAM_1
-            &macro_tap
-                &macro_param_2to1 &kp PARAM_2
-        )
-
-        MODMORPH(
-            tabber,
-            &m_hold_mod_press_key LCTRL TAB,
-            &kp TAB,
-            MOD_LCTL,
-            MOD_LCTL
-        )
-
-        MODMORPH(
-            swapper_win,
-            &m_hold_mod_press_key LALT TAB,
-            &kp TAB,
-            MOD_LALT,
-            MOD_LALT
-        )
-
-        MODMORPH(
-            swapper_mac,
-            &m_hold_mod_press_key LGUI TAB,
-            &kp TAB,
-            MOD_LGUI,
-            MOD_LGUI
-        )
-
         MACRO_ONE_PARAM(
             la,
             &macro_press
@@ -139,25 +106,45 @@
                 &macro_param_1to1 &mo PARAM_1
         )
 
+        MACRO_NO_PARAM(tap_switch, &kp LC(TAB)
+        MACRO_NO_PARAM(tap_switch_back, &kp LC(LS(TAB)))
+
+        MACRO_NO_PARAM(app_switch, &kp LG(TAB)
+        MACRO_NO_PARAM(app_switch_back, &kp LG(LS(TAB)))
+
+        MODMORPH(
+            tapper,
+            &tap_switch,
+            &tap_switch_back,
+            MOD_LSFT,
+        )
+
+        MODMORPH(
+            apper,
+            &app_switch,
+            &app_switch_back,
+            MOD_LSFT,
+        )
+
         // Tap-dance behaviors for Russian letters
         td_e_yo: tap_dance_e_yo {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_IO>; // Е/Ё
+            tapping-term-ms = <300>;
+            bindings = <&kp RU_CYRILLIC_SHORT_I>, <&kp RU_CYRILLIC_IO>; // Й/Ё
         };
 
         td_sh_shch: tap_dance_sh_shch {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&kp RU_CYRILLIC_SHA>, <&kp RU_CYRILLIC_SHCHA>; // Ш/Щ
         };
 
         td_soft_hard: tap_dance_soft_hard {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&kp RU_CYRILLIC_SOFT_SIGN>, <&kp RU_CYRILLIC_HARD_SIGN>; // Ь/Ъ
         };
     };
@@ -277,7 +264,7 @@ ___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK     
 
         nav_layer {
             bindings = <
-&tabber      &swapper_win &swapper_mac ___         _ ESC           _ ESC        _ HOME       _ END        _ BSPC       _ DEL
+___          &apper       &tapper      ___         _ ESC           _ ESC        _ HOME       _ END        _ BSPC       _ DEL
 &cm_sft      &cm_ctrl     &cm_alt      &cm_gui     _ RET           _ LEFT       _ DOWN       _ UP         _ RIGHT      _ RET
 _ PSPC       _ NSPC       &tog GAM     _ PSCRN     _ TAB           _ TAB        _ PG_UP      _ PG_DN      _ APOS       _ KP_NUM
                           &mo CMD      ______      ______          ______       ______       ______
