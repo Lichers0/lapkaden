@@ -268,9 +268,9 @@ ___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL      
 
         sym_ex_layer {
             bindings = <
-___          ___          ___          ___          ___             ___          ___          ___          ___          ___
-_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          ___          ___          ___          ___          ___
-___          ___          _ DQT        ___          ___             _ QMARK      ___          ___          ___          ___
+_ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
+_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+_ GRAVE      _ APOS       _ DQT        _ DOT        _ COMMA         _ QMARK      _ AT         _ HASH       _ CARET      _ TILDE
                           ______       ______      ______          ______       ______       ______
             >;
         };
