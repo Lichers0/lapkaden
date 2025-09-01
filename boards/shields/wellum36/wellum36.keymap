@@ -24,7 +24,7 @@
 #define MEH(key) LS(LC(LA(key)))
 
 #define SQT GRAVE
-#define DQT LS(GRAVE)
+#define DQT LS(APOSTROPHE)
 #define GRV RA(GRAVE)
 #define PIP LS(BSLH)
 #define BSL RA(BSLH)
@@ -270,7 +270,7 @@ ___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL      
             bindings = <
 _ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
 _ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-_ GRAVE      _ APOS       _ DQT        _ DOT        _ COMMA         _ QMARK      _ AT         _ HASH       _ CARET      _ TILDE
+___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK      _ AT         _ HASH       _ CARET      _ TILDE
                           ______       ______      ______          ______       ______       ______
             >;
         };
