@@ -118,10 +118,10 @@
                 &macro_param_1to1 &mo PARAM_1
         )
 
-        MACRO_NO_PARAM(tap_switch, &kp LC(TAB)
+        MACRO_NO_PARAM(tap_switch, &kp LC(TAB))
         MACRO_NO_PARAM(tap_switch_back, &kp LC(LS(TAB)))
 
-        MACRO_NO_PARAM(app_switch, &kp LG(TAB)
+        MACRO_NO_PARAM(app_switch, &kp LG(TAB))
         MACRO_NO_PARAM(app_switch_back, &kp LG(LS(TAB)))
 
         MODMORPH(
