@@ -284,7 +284,7 @@ ___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK     
 
         ru_sym_layer {
             bindings = <
-_ BSLH       _ LS(BSLH)   _ UNDER      _ LS(N6)     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ DOT
+_ BSLH       _ PIPE       _ UNDER      _ LS(N6)     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ DOT
 _ LS(COMMA)  _ LS(N4)     _ LS(LBKT)   _ LPAR       _ LBKT          _ LS(N3)     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
 ___          _ GRAVE      _ APOS       _ LS(SLASH)  _ LS(SEMICOLON) _ LS(N1)     _ LS(N2)     _ LS(N3)     _ LS(N6)     _ LS(GRAVE)
                           ______       &mo RU_SYM_EX  ______          ______       ______       ______
@@ -293,7 +293,7 @@ ___          _ GRAVE      _ APOS       _ LS(SLASH)  _ LS(SEMICOLON) _ LS(N1)    
 
         ru_sym_ex_layer {
             bindings = <
-_ BSLH       _ LS(BSLH)   _ UNDER      _ LS(N6)     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ DOT
+_ BSLH       _ PIPE       _ UNDER      _ LS(N6)     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ DOT
 _ LS(DOT)    _ SEMICOLON  _ LS(RBKT)   _ RPAR       _ RBKT          _ LS(N3)     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
 ___          _ GRAVE      _ LS(N2)     _ LS(SLASH)  _ LS(SEMICOLON) _ LS(N7)     _ LS(N2)     _ LS(N3)     _ LS(N6)     _ LS(GRAVE)
                           ______       ______      ______          ______       ______       ______
