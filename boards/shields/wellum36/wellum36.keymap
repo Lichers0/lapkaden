@@ -251,9 +251,9 @@ _ LCTRL      _ Z          _ X          _ C         _ V             ___          
 
         gfn_layer {
             bindings = <
-_ N5         _ N1         _ N2         _ N3        _ N4            &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR_ALL
-_ N0         _ N6         _ N7         _ N8        _ N9            ___          ___          ___          ___          ___
-_ G          _ J          _ I          _ M         _ T             _ KP_NUM     ___          ___          &sys_reset   &bootloader
+_ N5         _ N1         _ N2         _ N3        _ N4            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+_ N0         _ N6         _ N7         _ N8        _ N9            &bt BT_CLR   ___          ___          ___          &bt BT_CLR_ALL
+_ G          _ J          _ I          _ M         _ T             &out OUT_BLE &out OUT_USB &out OUT_TOG &sys_reset   &bootloader
                           _ ESC        _ RET       ______          ______       ______       ______
             >;
         };
