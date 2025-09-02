@@ -16,10 +16,12 @@
 #define GFN 3
 #define SYM 4
 #define SYM_EX 5
-#define NAV 6
-#define NUM 7
-#define ALT 8
-#define CMD 9
+#define RU_SYM 6
+#define RU_SYM_EX 7
+#define NAV 8
+#define NUM 9
+#define ALT 10
+#define CMD 11
 
 #define MEH(key) LS(LC(LA(key)))
 
@@ -215,6 +217,10 @@
             if-layers  = <NAV SYM>;
             then-layer = <NUM>;
         };
+        tri_layer_ru {
+            if-layers  = <NAV RU_SYM>;
+            then-layer = <NUM>;
+        };
     };
 };
 
@@ -236,7 +242,7 @@ _ Z          _ X          _ C          _ V         _ B             _ N          
 &td_si_yo               _ RU_CYRILLIC_TSE         _ RU_CYRILLIC_U          _ RU_CYRILLIC_KA        _ RU_CYRILLIC_IE             _ RU_CYRILLIC_EN  _ RU_CYRILLIC_GHE        &td_sh_shch              _ RU_CYRILLIC_ZE        _ RU_CYRILLIC_HA
 _ RU_CYRILLIC_EF        _ RU_CYRILLIC_YERU        _ RU_CYRILLIC_VE         _ RU_CYRILLIC_A         _ RU_CYRILLIC_PE             _ RU_CYRILLIC_ER  _ RU_CYRILLIC_O          _ RU_CYRILLIC_EL         _ RU_CYRILLIC_DE        _ RU_CYRILLIC_ZHE
 _ RU_CYRILLIC_YA        _ RU_CYRILLIC_CHE         _ RU_CYRILLIC_ES         _ RU_CYRILLIC_EM        _ RU_CYRILLIC_I              _ RU_CYRILLIC_TE  &td_soft_hard            _ RU_CYRILLIC_BE         _ RU_CYRILLIC_YU        _ RU_CYRILLIC_E
-                                                                           &layer_en               _ SPACE     &la NAV         &la SYM      _ LSFT       &mo ALT
+                                                                           &layer_en               _ SPACE     &la NAV         &la RU_SYM   _ LSFT       &mo ALT
             >;
         };
 
@@ -268,6 +274,24 @@ ___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL      
         };
 
         sym_ex_layer {
+            bindings = <
+_ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
+_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK      _ AT         _ HASH       _ CARET      _ TILDE
+                          ______       ______      ______          ______       ______       ______
+            >;
+        };
+
+        ru_sym_layer {
+            bindings = <
+_ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
+_ LT         _ COLON      _ LBRC       _ LPAR       _ LBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
+                          ______       &mo RU_SYM_EX  ______          ______       ______       ______
+            >;
+        };
+
+        ru_sym_ex_layer {
             bindings = <
 _ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
 _ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
