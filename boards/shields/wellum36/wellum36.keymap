@@ -120,6 +120,13 @@
                 &macro_param_1to1 &mo PARAM_1
         )
 
+        MACRO_ONE_PARAM(
+            ek,
+            &to_en
+            &macro_param_1to1 &kp PARAM_1
+            &to_ru
+        )
+
         MACRO_NO_PARAM(tap_switch, &kp LC(TAB))
         MACRO_NO_PARAM(tap_switch_back, &kp LC(LS(TAB)))
 
@@ -284,18 +291,18 @@ ___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK     
 
         ru_sym_layer {
             bindings = <
-_ BSLH       _ PIPE       _ UNDER      _ LS(N6)     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ DOT
-_ LS(COMMA)  _ LS(N4)     _ LS(LBKT)   _ LPAR       _ LBKT          _ LS(N3)     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          _ GRAVE      _ APOS       _ LS(SLASH)  _ LS(SEMICOLON) _ LS(N1)     _ LS(N2)     _ LS(N3)     _ LS(N6)     _ LS(GRAVE)
+&ek BSLH     &ek PIPE     &ek UNDER    &ek AMPS     &ek PRCNT       &ek PLUS     &ek MINUS    &ek EQUAL    &ek STAR     &ek FSLH
+&ek LT       &ek COLON    &ek LBRC     &ek LPAR     &ek LBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          &ek GRAVE    &ek APOS     &ek DOT      &ek COMMA       &ek EXCL     &ek AT       &ek HASH     &ek CARET    &ek TILDE
                           ______       &mo RU_SYM_EX  ______          ______       ______       ______
             >;
         };
 
         ru_sym_ex_layer {
             bindings = <
-_ BSLH       _ PIPE       _ UNDER      _ LS(N6)     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ DOT
-_ LS(DOT)    _ SEMICOLON  _ LS(RBKT)   _ RPAR       _ RBKT          _ LS(N3)     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          _ GRAVE      _ LS(N2)     _ LS(SLASH)  _ LS(SEMICOLON) _ LS(N7)     _ LS(N2)     _ LS(N3)     _ LS(N6)     _ LS(GRAVE)
+&ek BSLH     &ek PIPE     &ek UNDER    &ek AMPS     &ek PRCNT       &ek PLUS     &ek MINUS    &ek EQUAL    &ek STAR     &ek FSLH
+&ek GT       &ek SEMI     &ek RBRC     &ek RPAR     &ek RBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          &ek GRAVE    &ek DQT      &ek DOT      &ek COMMA       &ek QMARK    &ek AT       &ek HASH     &ek CARET    &ek TILDE
                           ______       ______      ______          ______       ______       ______
             >;
         };
