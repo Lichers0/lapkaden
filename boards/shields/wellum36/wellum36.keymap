@@ -291,18 +291,18 @@ ___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK     
 
         ru_sym_layer {
             bindings = <
-_ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
-_ LT         _ COLON      _ LBRC       _ LPAR       _ LBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
+_ BSLH       &ek PIPE     _ UNDER      &ek AMPS     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ PIPE
+&ek LT       _ LS(N6)     &ek LBRC     _ LPAR       &ek LBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          &ek GRAVE    &ek APOS     _ DOT        _ COMMA         _ LS(N1)     &ek AT       _ LS(N3)     &ek CARET    &ek TILDE
                           ______       &mo RU_SYM_EX  ______          ______       ______       ______
             >;
         };
 
         ru_sym_ex_layer {
             bindings = <
-_ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
-_ GT         _ SEMI       _ RBRC       _ RPAR       _ RBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK      _ AT         _ HASH       _ CARET      _ TILDE
+_ BSLH       &ek PIPE     _ UNDER      &ek AMPS     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ PIPE
+&ek GT       _ LS(N4)     &ek RBRC     _ RPAR       &ek RBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          &ek GRAVE    _ LS(N2)     _ FSLH       _ LS(FSLH)      _ LS(N7)     &ek AT       _ HASH       &ek CARET    &ek TILDE
                           ______       ______      ______          ______       ______       ______
             >;
         };
