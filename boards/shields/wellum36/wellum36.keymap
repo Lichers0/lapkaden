@@ -122,8 +122,10 @@
 
         MACRO_ONE_PARAM(
             ek,
-            &to_en
             &macro_wait_time 100
+            &to_en
+            &to_en
+            &macro_wait_time 300
             &macro_param_1to1 &kp PARAM_1
             &macro_pause_for_release
             &to_ru
@@ -293,9 +295,9 @@ ___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK     
 
         ru_sym_layer {
             bindings = <
-_ BSLH       &ek PIPE     _ UNDER      &ek AMPS     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ PIPE
-&ek LT       _ LS(N6)     &ek LBRC     _ LPAR       &ek LBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          &ek GRAVE    &ek APOS     _ DOT        _ COMMA         _ LS(N1)     &ek AT       _ LS(N3)     &ek CARET    &ek TILDE
+_ BSLH       &ek PIPE     _ UNDER      &ek AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ PIPE
+&ek LT       _ LS(N6)     &ek LBRC     _ LPAR         &ek LBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
+___          &ek GRAVE    &ek APOS     &ek DOT        &ek COMMA       _ LS(N1)     &ek AT       _ LS(N3)     &ek CARET    &ek TILDE
                           ______       &mo RU_SYM_EX  ______          ______       ______       ______
             >;
         };
