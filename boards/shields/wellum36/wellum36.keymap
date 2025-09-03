@@ -302,7 +302,7 @@ ___          &ek GRAVE    &ek APOS     _ DOT        _ COMMA         _ LS(N1)    
             bindings = <
 _ BSLH       &ek PIPE     _ UNDER      &ek AMPS     _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ PIPE
 &ek GT       _ LS(N4)     &ek RBRC     _ RPAR       &ek RBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          &ek GRAVE    _ LS(N2)     _ QMARK      _ LS(QMARK)     _ LS(N7)     &ek AT       _ HASH       &ek CARET    &ek TILDE
+___          &ek GRAVE    _ LS(N2)     &ek QMARK    &ek LS(QMARK)     _ LS(N7)     &ek AT       _ HASH       &ek CARET    &ek TILDE
                           ______       ______      ______          ______       ______       ______
             >;
         };
