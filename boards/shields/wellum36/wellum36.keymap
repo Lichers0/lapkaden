@@ -279,7 +279,7 @@ _ G          _ J          _ I          _ M         _ T             &out OUT_BLE 
             bindings = <
 _ BSLH       _ PIPE       _ UNDER      _ AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ FSLH
 _ LT         _ COLON      _ LBRC       _ LPAR       _ LBKT          _ DLLR       &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
+&key_repeat  _ GRAVE      _ APOS       _ DOT        _ COMMA         _ EXCL       _ AT         _ HASH       _ CARET      _ TILDE
                           ______       &mo SYM_EX  ______          ______       ______       ______
             >;
         };
@@ -297,7 +297,7 @@ ___          _ GRAVE      _ DQT        _ DOT        _ COMMA         _ QMARK     
             bindings = <
 _ BSLH       &ek PIPE     _ UNDER      &ek AMPS       _ PRCNT         _ PLUS       _ MINUS      _ EQUAL      _ STAR       _ PIPE
 &ek LT       _ LS(N6)     &ek LBRC     _ LPAR         &ek LBKT        &ek DLLR     &cm_gui      &cm_alt      &cm_ctrl     &cm_sft
-___          &ek GRAVE    &ek APOS     &ek DOT        &ek COMMA       _ LS(N1)     &ek AT       _ LS(N3)     &ek CARET    &ek TILDE
+&key_repeat  &ek GRAVE    &ek APOS     &ek DOT        &ek COMMA       _ LS(N1)     &ek AT       _ LS(N3)     &ek CARET    &ek TILDE
                           ______       &mo RU_SYM_EX  ______          ______       ______       ______
             >;
         };
